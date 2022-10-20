@@ -1,6 +1,7 @@
 
 
 import React, {useState} from 'react'
+import { Link } from "react-router-dom";
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import { BsTagsFill } from "react-icons/bs";
@@ -21,7 +22,7 @@ const Header = () => {
           </h1>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a href="#">Sell Tickets</a>
@@ -33,8 +34,12 @@ const Header = () => {
               <a href="#">About</a>
             </li>
           </ul>
-          <button className="btn">Sign In</button>
-          <button className="btn">Sign Up</button>
+          <Link to="/sign-in">
+            <button className="btn">Sign In</button>
+          </Link>
+          <Link to="/sign-up">
+            <button className="btn">Sign Up</button>
+          </Link>
           <div className="hamburger" onClick={handleClick}>
             {click ? (
               <FaRegTimesCircle className="icon" />
