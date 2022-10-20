@@ -1,27 +1,51 @@
-import React,{useState,useEffect} from 'react';
-import '../../../Styles/Header/header.css'
 
-function Header() {
-  return (
-<>
-<div>
-   <nav className="navbar">
-     <div className="logo">Re-Trip</div>
-     <ul className="nav-links">
-       <input type="checkbox" id="checkbox_toggle" />
-       <label for="checkbox_toggle" className="hamburger">&#9776;</label>
-       <div className="menu">
-         <li><a href="/sell-tickets">Sell Tickets</a></li>
-         <li><a href="/sign-in">Sign In</a></li>
-         <li className="services">
-           <a href="/sign-up">Sign Up</a>
-         </li>
-         <li><a href="/">Contact Us</a></li>
-       </div>
-     </ul>
-   </nav>
- </div>
-</>
-  );
-  }
-export default Header;
+
+import React, {useState} from 'react'
+import {HiOutlineMenuAlt4} from 'react-icons/hi'
+import {FaRegTimesCircle} from 'react-icons/fa'
+import { BsTagsFill } from "react-icons/bs";
+import "../../../Styles/Header/header.css";
+const Header = () => {
+    const[click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    return (
+      <div className="navbar">
+        <div className="container">
+          <h1>
+            <span>
+              <BsTagsFill />
+              Re-
+            </span>
+            TRIP
+          </h1>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Sell Tickets</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+          <button className="btn">Sign In</button>
+          <button className="btn">Sign Up</button>
+          <div className="hamburger" onClick={handleClick}>
+            {click ? (
+              <FaRegTimesCircle className="icon" />
+            ) : (
+              <HiOutlineMenuAlt4 className="icon" />
+            )}
+          </div>
+        </div>
+      </div>
+    );
+}
+
+export default Header
+

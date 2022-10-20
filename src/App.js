@@ -7,7 +7,7 @@ import Footer from './Components/NavBars/Footer/footer'
 import './Styles/Global/App.css'
 function App() {
   return (
-    <div className="bg-image">
+    <div>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
