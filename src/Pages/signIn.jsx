@@ -1,5 +1,8 @@
+import SignInComponent from '../Components/Sign-In/main'
 function SignIn() {
-  return <div className="">Hello From Sign In Page</div>;
+  return <div>
+    <SignInComponent/>
+  </div>;
 }
 
 export default SignIn;
