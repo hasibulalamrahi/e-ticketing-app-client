@@ -1,4 +1,4 @@
-import '../../Styles/SellTicket'
+import '../../Styles/SellTicket/sellTickets.css'
 const SellTicketComp = () => {
   return (
     <>
