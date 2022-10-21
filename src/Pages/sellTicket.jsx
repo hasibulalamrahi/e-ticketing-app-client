@@ -1,9 +1,9 @@
-
+import SellTicketComp from "../Components/sellTicket/sellTickets"
 const SellTicket = () =>{
     return (
         <>
             <div>
-                Hello From sell ticket page
+                <SellTicketComp/>
             </div>
         </>
     )
