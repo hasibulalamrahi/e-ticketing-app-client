@@ -6,6 +6,8 @@ import SellTicket from './Pages/sellTicket'
 import Header from './Components/NavBars/Header/header'
 import Footer from './Components/NavBars/Footer/footer'
 import './Styles/Global/App.css'
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div>
