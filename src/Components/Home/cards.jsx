@@ -6,7 +6,7 @@ const CardComponent = (props) => {
         <div className="card-container">
           <div className="box">
             <div className="card-header">
-              <h3>EKOTA EXPRESS</h3>
+              <h3>{props.allTicket.trainName}</h3>
             </div>
             <div className="ticket-content">
               <div className="ticket-info">
