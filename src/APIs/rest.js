@@ -30,3 +30,14 @@ export async function signUpUser(data) {
     console.log(err);
   }
 }
+
+export async function signInUser(data){
+  try{
+        const response = await axios.post(apiEndpoints.signIn, data);
+        console.log(response)
+
+  }
+  catch(err){
+      toast.error("Some Error Occured");
+  }
+}
