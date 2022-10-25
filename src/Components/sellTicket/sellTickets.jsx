@@ -56,7 +56,7 @@ const SellTicketComp = () => {
                               placeholder="From Station"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="fromStation" />
                             </div>
                           </div>
@@ -68,7 +68,7 @@ const SellTicketComp = () => {
                               placeholder="To Station"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="toStation" />
                             </div>
                           </div>
@@ -82,7 +82,7 @@ const SellTicketComp = () => {
                               placeholder="Journey Date"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="date" />
                             </div>
                           </div>
@@ -94,7 +94,7 @@ const SellTicketComp = () => {
                               placeholder="Time"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="time" />
                             </div>
                           </div>
@@ -108,7 +108,7 @@ const SellTicketComp = () => {
                               placeholder="Train Name"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="trainName" />
                             </div>
                           </div>
@@ -120,7 +120,7 @@ const SellTicketComp = () => {
                               placeholder="Ticket Class"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="ticketClass" />
                             </div>
                           </div>
@@ -134,7 +134,7 @@ const SellTicketComp = () => {
                               placeholder="Coach No"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="coachNo" />
                             </div>
                           </div>
@@ -146,7 +146,7 @@ const SellTicketComp = () => {
                               placeholder="Ticket Fare"
                               className="input-field"
                             />
-                            <div className="errMsg text-danger text-red-600">
+                            <div className="error-message">
                               <ErrorMessage name="fare" />
                             </div>
                           </div>
