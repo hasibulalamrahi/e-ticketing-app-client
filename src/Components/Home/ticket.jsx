@@ -1,6 +1,16 @@
+import { useState,useEffect } from "react";
 import "../../Styles/HomePage/ticket.css";
 import CardComponent from './cards'
+import {getAllTickets} from '../../APIs/rest'
 function TicketSection() {
+  const [allTickets,setAllTickets] = useState([])
+  const getAllTicketInfo= async()=>{
+      const ticketData = await getAllTickets();
+     setAllTickets(ticketData);
+  } 
+  useEffect(() => {
+    getAllTicketInfo()
+  }, []);
   return (
     <>
       <div className="best">
@@ -17,7 +27,10 @@ function TicketSection() {
         </div>
       </div>
       <div className="ticket-cards">
-        <CardComponent />
+        {allTickets.map((allTicket,index) => {
+          return <CardComponent key={index} allTicket={allTicket} />;
+        })}
+        
       </div>
     </>
   );
