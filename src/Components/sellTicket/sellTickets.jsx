@@ -26,7 +26,6 @@ const SellTicketComp = () => {
                     fare: "",
                   }}
                   onSubmit={(values, actions) => {
-                    alert("Hi")
                     const data = {
                       from: values.fromStation,
                       to: values.toStation,
